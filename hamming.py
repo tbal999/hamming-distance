@@ -25,12 +25,10 @@ def hammingA(x,y):
 def hammingB(x,y):
     xindex = 0
     ham = 0
-    print("Length's match")
     for a in xlist:
         if a == ylist[xindex]:
             ham = ham+1
         xindex = xindex+1
-    print("Hamming distance:",ham) 
     hamminglist.append(ham)
 
 test1 = "12831298371298371978312"
@@ -45,6 +43,4 @@ while counter < 10:
     random.shuffle(xlist)
     random.shuffle(ylist)
 print(hamminglist)
-            
-
-
+          

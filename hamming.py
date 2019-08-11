@@ -6,7 +6,6 @@ import random
 
 @author: Tom Balcombe
 """
-import random
 
 xlist = []
 ylist = []
@@ -30,9 +29,9 @@ def hammingB(x,y):
             ham = ham+1
         xindex = xindex+1
     hamminglist.append(ham)
-    print(ham)
+    print("Hamming distance is:",len(xlist)-ham)
 
-test1 = "12831298371298371978312"
-test2 = "12312467628312309819284"
+test1 = "234455"
+test2 = "232255"
 
 hammingA(test1,test2)

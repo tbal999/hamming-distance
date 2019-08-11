@@ -31,7 +31,10 @@ def hammingB(x,y):
     hamminglist.append(ham)
     print("Hamming distance is:",len(xlist)-ham)
 
-test1 = "234455"
-test2 = "232255"
 
-hammingA(test1,test2)
+test1 = input("Type in first string:" )
+test1str = str(test1)
+test2 = input("Type in second string:" )
+test2str = str(test2)
+
+hammingA(test1str,test2str)

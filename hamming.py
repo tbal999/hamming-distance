@@ -30,17 +30,9 @@ def hammingB(x,y):
             ham = ham+1
         xindex = xindex+1
     hamminglist.append(ham)
+    print(ham)
 
 test1 = "12831298371298371978312"
 test2 = "12312467628312309819284"
 
 hammingA(test1,test2)
-
-counter = 0
-while counter < 10:
-    counter = counter+1
-    hammingB(xlist,ylist)
-    random.shuffle(xlist)
-    random.shuffle(ylist)
-print(hamminglist)
-          

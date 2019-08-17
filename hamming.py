@@ -22,12 +22,10 @@ def hammingA(x,y):
     hammingB(x,y)
 
 def hammingB(x,y):
-    xindex = 0
     ham = 0
-    for a in xlist:
-        if a == ylist[xindex]:
+    for index, a in enumerate(xlist):
+        if a == ylist[index]:
             ham = ham+1
-        xindex = xindex+1
     hamminglist.append(ham)
     print("Hamming distance is:",len(xlist)-ham)
 
